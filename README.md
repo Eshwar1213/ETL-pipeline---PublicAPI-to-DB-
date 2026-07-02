@@ -40,6 +40,8 @@ The system follows a modular, decoupled ETL design pattern consisting of three c
 [ universities.db ] ──► Final SQLite binary file (ind_uni table)
 ```
 
+---
+
 ### 1. Extract Stage
 * **Mechanism:** Issues an asynchronous-safe programmatic synchronous `HTTP GET` request targeting the target REST endpoint (`http://universities.hipolabs.com/search?country=India`).
 * **Payload Ingestion:** Parses incoming binary streams dynamically into native serializable multi-tiered JSON dictionaries.
